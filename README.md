@@ -9,16 +9,31 @@ Ele é composto por dois subprojetos:
 ---
 
 ### Estrutura do Projeto (mais informações no README de cada parte
-|
-    |-- /back/
-    |   |-- ... (código-fonte, pom.xml, etc.)
-    |   `-- README.md (README específico do Backend)
     |
-    |-- /front/
-    |   |-- ... (código-fonte, package.json, etc.)
-    |   `-- README.md (README específico do Frontend)
+    backend/
+    ├── src/
+    │   ├── main/
+    │   │   ├── java/com/aihorizon/
+    │   │   │   ├── BackendApplication.java
+    │   │   │   ├── controller/
+    │   │   │   │   └── TarefaController.java
+    │   │   │   ├── model/
+    │   │   │   │   └── Tarefa.java
+    │   │   │   ├── repository/
+    │   │   │   │   └── TarefaRepository.java
+    │   │   │   ├── service/
+    │   │   │   │   └── TarefaService.java
+    │   │   │   └── config/
+    │   │   │       ├── CorsConfig.java
+    │   │   │       └── DataInitializer.java
+    │   │   └── resources/
+    │   │       └── application.properties
+    │   └── test/
+    ├── pom.xml
+    └── README.md
     |
-    `-- README.md (Este arquivo principal)
+    frontend/
+    
 ### Tecnologias Utilizadas
 
 | Área | Tecnologia |
