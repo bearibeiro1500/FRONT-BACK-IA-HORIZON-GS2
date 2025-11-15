@@ -33,7 +33,19 @@ Ele é composto por dois subprojetos:
     └── README.md
     |
     frontend/
-    
+    ├── src/
+    ├── screens/
+    │   ├── TarefasListScreen.js    # Tela de lista de tarefas
+    │   └── TarefaDetailScreen.js   # Tela de detalhes
+    └── services/
+        └── api.js                  # Serviço de comunicação com API
+    ├── App.js                          # Componente principal e navegação
+    ├── app.json                        # Configuração do Expo
+    ├── babel.config.js                 # Configuração do Babel
+    ├── package.json                    # Dependências do projeto
+    └── README.md 
+    |
+    README.md
 ### Tecnologias Utilizadas
 
 | Área | Tecnologia |
