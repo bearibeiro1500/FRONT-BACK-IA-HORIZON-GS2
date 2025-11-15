@@ -14,22 +14,22 @@ Ele é composto por dois subprojetos:
     ├── src/
     │   ├── main/
     │   │   ├── java/com/aihorizon/
-    │   │   │   ├── BackendApplication.java
+    │   │   │   ├── BackendApplication.java # Classe principal que inicia o Spring Boot
     │   │   │   ├── controller/
-    │   │   │   │   └── TarefaController.java
+    │   │   │   │   └── TarefaController.java # Controla os endpoints da API (ex: /api/tarefas)
     │   │   │   ├── model/
-    │   │   │   │   └── Tarefa.java
+    │   │   │   │   └── Tarefa.java # Define a entidade/tabela "Tarefa"
     │   │   │   ├── repository/
-    │   │   │   │   └── TarefaRepository.java
+    │   │   │   │   └── TarefaRepository.java # Interface de acesso ao banco de dados (JPA)
     │   │   │   ├── service/
-    │   │   │   │   └── TarefaService.java
+    │   │   │   │   └── TarefaService.java # Contém a lógica de negócios das tarefas
     │   │   │   └── config/
-    │   │   │       ├── CorsConfig.java
-    │   │   │       └── DataInitializer.java
+    │   │   │       ├── CorsConfig.java # Configuração de CORS (para o front)
+    │   │   │       └── DataInitializer.java # Popula o banco com dados iniciais
     │   │   └── resources/
-    │   │       └── application.properties
-    │   └── test/
-    ├── pom.xml
+    │   │       └── application.properties # Configurações da aplicação (porta, banco, etc.)
+    │   └── test/ 
+    ├── pom.xml # Dependências e configuração do Maven
     └── README.md
     |
     frontend/
